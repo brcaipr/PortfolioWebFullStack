@@ -1,15 +1,29 @@
-h2 {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+
+#nombre{
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+h2 {
+  color: #fff;
+  text-align: center;
 }
 p {
-    color: #fff;
+  color: #fff;
 }
-img{
-    position: relative;
-    border-radius: 50%;
-    width: 152px;
-    height: 152px;
-    margin-top: -85px;
-    margin-left: 60px;
-    z-index: 1;
+img {
+  position: relative;
+  border-radius: 50%;
+  width: 152px;
+  height: 152px;
+  margin-top: -85px;
+  margin-left: 80px;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+#acercade {
+    color: #fff;
+  margin: 25px auto;
 }

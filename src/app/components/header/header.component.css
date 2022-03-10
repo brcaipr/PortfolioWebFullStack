@@ -1,8 +1,14 @@
 #aplogo{
     width: 200px;
+    position: relative;
 }
 
 .logos{
-    width: 30px;
+    width: 40px;
+    float: right;
+    margin-top: 40px;
+    position: relative;
+   
+
     
 }
