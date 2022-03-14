@@ -1,70 +1,181 @@
 <div class="container-fluid">
-    <br>
-    <div class="row">
-        <h1>Hard & Soft Skills</h1>
-        <div class="html col-md-1">
-            <img src="../../../assets/htmllogo.png" alt="htmllogo">
-        </div>
-        <div class="col-md-4">
-            <h3>HTML</h3>
-            <div class="progress">
-                <div class="progress-bar" role="progress-bar" style="width:80% ; background:aqua;"></div>
-                80%
-            </div>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-1">
-            <img src="../../../assets/csslogo.png" alt="csslogo">
-        </div>
-        <div class="col-md-4">
-            <h3>CSS</h3>
-            <div class="progress">
-                <div class="progress-bar" role="progress-bar" style="width:70% ; background:aqua"></div>
-            </div>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="html col-md-1">
-            <img src="../../../assets/htmllogo2.png" alt="htmllogo">
-        </div>
-        <div class="col-md-4">
-            <h3>HTML</h3>
-            <div class="progress">
-                <div class="progress-bar" role="progress-bar" style="width:80% ; background:aqua;"></div>
-                80%
-            </div>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-1">
-            <img src="../../../assets/csslogo2.png" alt="csslogo">
-        </div>
-        <div class="col-md-4">
-            <h3>CSS</h3>
-            <div class="progress">
-                <div class="progress-bar" role="progress-bar" style="width:70% ; background:aqua"></div>
-            </div>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-1">
-            <img src="../../../assets/jslogo.png" alt="jslogo">
-        </div>
-        <div class="col-md-4">
-            <h3>JavaScript</h3>
-            <div class="progress">
-                <div class="progress-bar" role="progress-bar" style="width:50% ; background:aqua"></div>
-            </div>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-1">
-            <img src="../../../assets/angularlogo.png" alt="Angular">
-        </div>
-        <div class="col-md-4">
-            <h3>Angular</h3>
-            <div class="progress">
-                <div class="progress-bar" role="progress-bar" style="width:60% ; background:aqua"></div>
-            </div>
-        </div>
-
-
-
+  <br />
+  <div class="row">
+    <h1>Hard & Soft Skills</h1>
+    <div class="html col-md-1">
+      <img src="../../../assets/htmllogo.png" alt="htmllogo" />
     </div>
+    <div class="col-md-4">
+      <h3>HTML</h3>
+      <div class="progress">
+        <div
+          class="progress-bar"
+          role="progress-bar"
+          style="width: 80%; background: aqua"
+        ></div>
+        80%
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-1">
+      <img src="../../../assets/csslogo.png" alt="csslogo" />
+    </div>
+    <div class="col-md-4">
+      <h3>CSS</h3>
+      <div class="progress">
+        <div
+          class="progress-bar"
+          role="progress-bar"
+          style="width: 70%; background: aqua"
+        ></div>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="html col-md-1">
+      <img src="../../../assets/htmllogo2.png" alt="htmllogo" />
+    </div>
+    <div class="col-md-4">
+      <h3>HTML</h3>
+      <div class="progress">
+        <div
+          class="progress-bar"
+          role="progress-bar"
+          style="width: 80%; background: aqua"
+        ></div>
+        80%
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-1">
+      <img src="../../../assets/csslogo2.png" alt="csslogo" />
+    </div>
+    <div class="col-md-4">
+      <h3>CSS</h3>
+      <div class="progress">
+        <div
+          class="progress-bar"
+          role="progress-bar"
+          style="width: 70%; background: aqua"
+        ></div>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-1">
+      <img src="../../../assets/jslogo.png" alt="jslogo" />
+    </div>
+    <div class="col-md-4">
+      <h3>JavaScript</h3>
+      <div class="progress">
+        <div
+          class="progress-bar"
+          role="progress-bar"
+          style="width: 50%; background: aqua"
+        ></div>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-1">
+      <img src="../../../assets/angularlogo.png" alt="Angular" />
+    </div>
+    <div class="col-md-4">
+      <h3>Angular</h3>
+      <div class="progress">
+        <div
+          class="progress-bar"
+          role="progress-bar"
+          style="width: 60%; background: aqua"
+        ></div>
+      </div>
+    </div>
+    <div class="text-center col-md-4">
+      <h2>HTML</h2>
+      <circle-progress
+        [percent]="85"
+        [radius]="100"
+        [imageSrc]="'../assets/htmllogo.png'"
+        [showImage]="true"
+        [imageHeight]="90"
+        [imageWidth]="90"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="3"
+        [outerStrokeColor]="'aqua'"
+        [innerStrokeColor]="'white'"
+        [animation]="true"
+        [animationDuration]="300"
+      >
+      </circle-progress>
+    </div>
+    <div class="text-center col-md-4">
+      <h2>CSS</h2>
+      <circle-progress
+        [percent]="50"
+        [radius]="100"
+        [imageSrc]="'../assets/csslogo.png'"
+        [showImage]="true"
+        [imageHeight]="90"
+        [imageWidth]="90"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="3"
+        [outerStrokeColor]="'aqua'"
+        [innerStrokeColor]="'white'"
+        [animation]="true"
+        [animationDuration]="300"
+      >
+      </circle-progress>
+    </div>
+    <div class="text-center col-md-4">
+      <h2>JavaScript</h2>
+      <circle-progress
+        [percent]="85"
+        [radius]="100"
+        [imageSrc]="'../assets/jslogo.png'"
+        [showImage]="true"
+        [imageHeight]="90"
+        [imageWidth]="90"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="3"
+        [outerStrokeColor]="'aqua'"
+        [innerStrokeColor]="'white'"
+        [animation]="true"
+        [animationDuration]="300"
+      >
+      </circle-progress>
+    </div>
+    <div class="text-center col-md-4">
+      <h2>Angular</h2>
+      <circle-progress
+        [percent]="85"
+        [radius]="100"
+        [imageSrc]="'../assets/angularlogo.png'"
+        [showImage]="true"
+        [imageHeight]="90"
+        [imageWidth]="90"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="3"
+        [outerStrokeColor]="'aqua'"
+        [innerStrokeColor]="'white'"
+        [animation]="true"
+        [animationDuration]="300"
+      >
+      </circle-progress>
+    </div>
+    <div class="text-center col-md-4">
+      <h2>Node JS</h2>
+      <circle-progress
+        [percent]="55"
+        [radius]="100"
+        [imageSrc]="'../assets/nodejslogo.png'"
+        [showImage]="true"
+        [imageHeight]="90"
+        [imageWidth]="90"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="3"
+        [outerStrokeColor]="'aqua'"
+        [innerStrokeColor]="'white'"
+        [animation]="true"
+        [animationDuration]="300"
+      >
+      </circle-progress>
+    </div>
+  </div>
 </div>

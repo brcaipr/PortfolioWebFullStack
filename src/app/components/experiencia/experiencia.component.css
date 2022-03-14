@@ -8,6 +8,7 @@ h2,h4{
     display: inline;
 }
 img{
+    position: relative;
     width: 205px;
     border-radius: 20px;
 }
