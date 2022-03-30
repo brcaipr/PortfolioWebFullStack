@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Montserrat:wght@100&display=swap');
 
 #nombre{
     color: #fff;
@@ -11,6 +12,7 @@ h2 {
 }
 p {
   color: #fff;
+  font-family: 'Didact Gothic', sans-serif;
 }
 img {
   position: relative;
@@ -24,4 +26,6 @@ img {
 #acercade {
     color: #fff;
   margin: 25px auto;
+  font-family: 'Didact Gothic', sans-serif;
 }
+  
