@@ -1,14 +1,24 @@
-#aplogo{
-    width: 200px;
-    position: relative;
+.aplogo{
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.aplogo img{
+    height: 40px;
+}
+.logos{
+    margin-top: 7px;
+    margin-bottom: 7px;
+    
+    
 }
 
-.logos{
-    width: 40px;
-    float: right;
-    margin-top: 40px;
-    position: relative;
-   
+.logos img{
+    height: 40px;
+    margin-left: 3px;
+    margin-right: 3px;
 
-    
+}
+.btn{
+    margin-top: 7px;
+    margin-bottom: 7px;
 }
