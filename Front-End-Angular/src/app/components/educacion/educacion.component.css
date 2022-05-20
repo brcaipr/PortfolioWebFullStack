@@ -14,3 +14,6 @@ h1{
 
     margin-right: 20px;
 }
+.titulo{
+    justify-content: space-between;
+  }
