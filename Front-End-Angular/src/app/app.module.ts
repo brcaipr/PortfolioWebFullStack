@@ -12,7 +12,8 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { FooterComponent } from './components/footer/footer.component';
-import {HttpClientModule } from '@angular/common/http'
+import {HttpClientModule } from '@angular/common/http';
+import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component'
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {HttpClientModule } from '@angular/common/http'
     EducacionComponent,
     SkillsComponent,
     ProyectoComponent,
-    FooterComponent
+    FooterComponent,
+    IniciarSesionComponent
   ],
   imports: [
     BrowserModule,

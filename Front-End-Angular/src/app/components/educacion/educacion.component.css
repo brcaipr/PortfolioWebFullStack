@@ -17,3 +17,7 @@ h1{
 .titulo{
     justify-content: space-between;
   }
+
+  .fa-plus-circle{
+      font-size: 20px;
+  }
