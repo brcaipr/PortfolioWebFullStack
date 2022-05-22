@@ -19,9 +19,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class EducacionController {
     @Autowired IEducacionService ieducacionService;
     
-    @GetMapping("/educacion/traer/dato")
-    public Educacion findEducacion(){
-        return ieducacionService.findEducacion((long)1);
+       @GetMapping("/educacion/traer")
+    public List<Educacion> getEducacion(){
+        return ieducacionService.getEducacion();
     }
     
     @PostMapping("/educacion/crear")
