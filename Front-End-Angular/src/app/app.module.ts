@@ -16,6 +16,7 @@ import {HttpClientModule } from '@angular/common/http';
 import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { EditarEducacionComponent } from './components/educacion/editar-educacion/editar-educacion.component';
 
 
 
@@ -32,6 +33,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     IniciarSesionComponent,
     PortfolioComponent,
+    EditarEducacionComponent,
     
   
     

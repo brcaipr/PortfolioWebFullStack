@@ -26,8 +26,11 @@ img {
 #acercade {
     color: #fff;
   margin: 25px auto;
+  display: flex;
+  justify-content: space-between;
   font-family: 'Didact Gothic', sans-serif;
 }
 .fa-pencil{
   font-size: 20px;
+  margin-right: 20px;
 }
