@@ -57,4 +57,10 @@ public class EducacionController {
        
     
     }
+    
+      @GetMapping("/educacion/traer/datos")
+    public Educacion findEducacion(){
+        return ieducacionService.findEducacion((long)1);
+    }
+
 }
