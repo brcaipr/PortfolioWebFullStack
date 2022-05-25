@@ -17,7 +17,8 @@ import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesi
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EditarEducacionComponent } from './components/educacion/editar-educacion/editar-educacion.component';
-
+import{FormsModule}from '@angular/forms';
+import{EducacionService}from '../../src/app/service/educacion.service';
 
 
 @NgModule({
@@ -43,9 +44,10 @@ import { EditarEducacionComponent } from './components/educacion/editar-educacio
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [EducacionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
