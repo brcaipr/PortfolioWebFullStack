@@ -6,16 +6,17 @@
             <br>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-            <ul>
+            <ul *ngFor="let Educacion of Educaciones">
                 <li>
-                    <h2>{{educacion.nombre}}</h2> - <h4>(-)</h4>
+                    <h2>{{Educacion.nombre}}</h2> - <h4>({{Educacion.anio_inicio}}-{{Educacion.anio_fin}})</h4>
                 </li>
-                <p></p>
+                <p>{{Educacion.detalle}}</p>
+
+                <div class="text-center col-xs-12 col-sm-12 col-md-1 col-lg-1">
+                    <a routerLink="/editar-educacion/{{Educacion.id}}"><i class="img-fluid fa fa-pencil"></i></a>
+                    <a><i class="fa fa-trash" aria-hidden="true"></i></a>
+                </div>
             </ul>
-        </div>
-        <div class="text-center col-xs-12 col-sm-12 col-md-1 col-lg-1">
-            <a routerLink="/editar-educacion"><i class="img-fluid fa fa-pencil"></i></a>
-            <a href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
         </div>
     </div>
 </div>

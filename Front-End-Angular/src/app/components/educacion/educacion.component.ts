@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { educacion } from 'src/app/model/educacion.model';
-import{EducacionService}from '../../service/educacion.service'
+import { ToastrService } from 'ngx-toastr';
+import { Educacion } from 'src/app/model/Educacion';
+import { EducacionService } from 'src/app/service/educacion.service';
 
 @Component({
   selector: 'app-educacion',
@@ -9,12 +9,36 @@ import{EducacionService}from '../../service/educacion.service'
   styleUrls: ['./educacion.component.css']
 })
 export class EducacionComponent implements OnInit {
-  educacion:educacion =new educacion("","","","","");
 
-  constructor(public educacionService:EducacionService, private router:Router) { }
+  Educaciones:Educacion[] = [];
+
+  constructor(private educacionService:EducacionService,
+    private toastr: ToastrService) { }
 
   ngOnInit() {
-   this.educacionService.getEducacion().subscribe(data=>{this.educacion=data;})
+    this.getEducacion();
+   
   }
 
+  getEducacion(): void{
+    this.educacionService.lista().subscribe(
+      data=>{
+        this.Educaciones=data;
+      },
+      err=>{
+        console.log(err);
+      }
+    )
+  }
+
+  borrar(id: number){
+    this.educacionService.eliminar(id).subscribe(
+      data=>{
+        this.getEducacion();
+      },
+      err => {
+       
+      }
+    );
+  }
 }

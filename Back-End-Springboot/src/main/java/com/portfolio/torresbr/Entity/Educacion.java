@@ -21,7 +21,8 @@ public class Educacion {
     private String nombre;
     
     @NotNull
-    private int anio_inicio;
+    @Size(min=1,max=50)
+    private String anio_inicio;
     
     @NotNull
     @Size(min=1,max=50)

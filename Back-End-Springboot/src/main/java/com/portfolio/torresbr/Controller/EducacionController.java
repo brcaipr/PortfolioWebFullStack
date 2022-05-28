@@ -39,7 +39,7 @@ public class EducacionController {
     @PutMapping("/educacion/editar/{id}")
     public Educacion editEducacion(@PathVariable Long id,
                                    @RequestParam("nombre") String NewNombre,
-                                   @RequestParam("anio_inicio") int NewAnio_inicio,
+                                   @RequestParam("anio_inicio") String NewAnio_inicio,
                                    @RequestParam("anio_fin") String NewAnio_fin,
                                    @RequestParam("detalle") String NewDetalle,
                                    @RequestParam("img") String NewImg){
@@ -60,7 +60,7 @@ public class EducacionController {
     
       @GetMapping("/educacion/traer/datos")
     public Educacion findEducacion(){
-        return ieducacionService.findEducacion((long)1);
+        return ieducacionService.findEducacion((long)4);
     }
 
 }
