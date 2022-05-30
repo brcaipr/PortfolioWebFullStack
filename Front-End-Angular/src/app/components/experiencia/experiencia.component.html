@@ -2,23 +2,21 @@
     <div class="row">
         <h1>Experiencia Laboral <a href=""><i class="fa fa-plus" aria-hidden="true"></i></a></h1>
         <div class="text-center col-xs-12 col-sm-12 col-md-3 col-lg-3">
-            <img class="img-fluid" src="../../../assets/logolaforesta2.png" alt="laforesta" width="200px" id="laforesta">
+            <img class="img-fluid" src="../../../assets/logolaforesta2.png" alt="laforesta" width="200px"
+                id="laforesta">
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-            <ul>
+        <div  *ngFor="let Experiencia of Experiencias" class="col-xs-12 col-sm-12 col-md-8 col-lg-8" >
+            <ul >
                 <li>
-                    <h2>Coop. de Trabajo La Foresta Ltda.</h2> - <h4>(2013-Presente)</h4>
+                    <h2>{{Experiencia.nombre}}</h2> - <h4>({{Experiencia.anio_inicio}}-{{Experiencia.anio_fin}})</h4>
+
+                    <p>{{Experiencia.detalle}}</p>
                 </li>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, doloremque molestiae vel expedita
-                    quo
-                    veritatis error consequuntur fugit earum, tempora ipsum velit debitis atque ratione voluptates!
-                    Incidunt
-                    earum cum quisquam?</p>
             </ul>
-        </div>
-        <div class="text-center col-xs-12 col-sm-12 col-md-1 col-lg-1">
-            <a href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
-            <a href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
+            <div class="iconos text-center col-xs-12 col-sm-12 col-md-1 col-lg-1">
+                <a href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
+            </div>
         </div>
     </div>
 </div>

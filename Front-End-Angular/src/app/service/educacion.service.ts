@@ -23,8 +23,16 @@ export class EducacionService {
     return this.httpClient.post<any>(this.educacionURL+'crear',educacion);
   }
 
-  public eliminar(id: number): Observable<any> {
+  public delete(id: number): Observable<any> {
     return this.httpClient.delete<any>(this.educacionURL+ `eliminar/${id}`);
+  }
+
+  public update(id: number, educacion: Educacion): Observable<any> {
+    return this.httpClient.put<any>(this.educacionURL + `editar/${id}`, educacion);
+  }
+
+  public detail(id: number): Observable<Educacion> {
+    return this.httpClient.get<Educacion>(this.educacionURL + `traer/${id}`);
   }
 
 }

@@ -23,6 +23,8 @@ import { ToastrModule } from 'ngx-toastr';
 
 import{FormsModule}from '@angular/forms';
 import{EducacionService}from '../../src/app/service/educacion.service';
+import { AddExperienciaComponent } from './components/experiencia/add-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
 
 
 
@@ -42,6 +44,8 @@ import{EducacionService}from '../../src/app/service/educacion.service';
     FooterComponent,
     IniciarSesionComponent,
     PortfolioComponent,
+    AddExperienciaComponent,
+    EditExperienciaComponent,
   
     
   

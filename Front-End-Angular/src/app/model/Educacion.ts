@@ -1,12 +1,12 @@
 export class Educacion{
     id?: number;
-    nombre: String;
-    anio_inicio: String;
-    anio_fin: String;
-    detalle: String;
-    img: String;
+    nombre: string;
+    anio_inicio: string;
+    anio_fin: string;
+    detalle: string;
+    img: string;
 
-    constructor(nombre:String,anio_inicio:String,anio_fin:String,detalle:String,img:String){
+    constructor(nombre:string,anio_inicio:string,anio_fin:string,detalle:string,img:string){
         this.nombre=nombre;
         this.anio_inicio=anio_inicio;
         this.anio_fin=anio_fin;
