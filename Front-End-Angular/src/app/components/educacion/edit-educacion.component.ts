@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
+import { Educacion } from 'src/app/model/Educacion';
+import { EducacionService } from 'src/app/service/educacion.service';
+
 
 @Component({
   selector: 'app-edit-educacion',
@@ -7,9 +12,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditEducacionComponent implements OnInit {
 
-  constructor() { }
+ 
 
-  ngOnInit(): void {
+  constructor(
+    private educacionService:EducacionService,
+    private activatedRoute:ActivatedRoute,
+    private toastr:ToastrService,
+    private router:Router
+
+  ) { }
+
+  ngOnInit():void {
+ 
+    
   }
 
+  
 }

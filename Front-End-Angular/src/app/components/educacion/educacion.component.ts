@@ -9,8 +9,9 @@ import { EducacionService } from 'src/app/service/educacion.service';
   styleUrls: ['./educacion.component.css']
 })
 export class EducacionComponent implements OnInit {
-
+  
   Educaciones:Educacion[] = [];
+  
 
   constructor(private educacionService:EducacionService,
     private toastr: ToastrService) { }
@@ -31,14 +32,7 @@ export class EducacionComponent implements OnInit {
     )
   }
 
-  borrar(id: number){
-    this.educacionService.eliminar(id).subscribe(
-      data=>{
-        this.getEducacion();
-      },
-      err => {
-       
-      }
-    );
-  }
+ borrar(id:number){
+   alert('borrar el '+id);
+ }
 }
