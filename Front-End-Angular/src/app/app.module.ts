@@ -15,8 +15,6 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { FooterComponent } from './components/footer/footer.component';
 import {HttpClientModule } from '@angular/common/http';
-import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
-import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToastrModule } from 'ngx-toastr';
@@ -44,8 +42,6 @@ import { HomeComponent } from './components/home/home.component';
     SkillsComponent,
     ProyectoComponent,
     FooterComponent,
-    IniciarSesionComponent,
-    PortfolioComponent,
     AddExperienciaComponent,
     EditExperienciaComponent,
     LoginComponent,
