@@ -4,6 +4,7 @@ import com.portfolio.torresbr.Entity.Educacion;
 import com.portfolio.torresbr.Interface.IEducacionService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,19 +24,19 @@ public class EducacionController {
     public List<Educacion> getEducacion(){
         return ieducacionService.getEducacion();
     }
-    
+    @PreAuthorize("hasRole('ADMIN')")
     @PostMapping("/educacion/crear")
     public String createEducacion(@RequestBody Educacion educacion){
         ieducacionService.saveEducacion(educacion);
         return "Educacion agregada con exito";
     }
-    
+    @PreAuthorize("hasRole('ADMIN')")
     @DeleteMapping("/educacion/eliminar/{id}")
     public String deleteEducacion(@PathVariable Long id){
         ieducacionService.deleteEducacion(id);
         return "La educacion fue borrada on exito";
     }
-    
+    @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/educacion/editar/{id}")
     public Educacion editEducacion(@PathVariable Long id,
                                    @RequestParam("nombre") String NewNombre,

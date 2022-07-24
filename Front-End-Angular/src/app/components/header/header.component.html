@@ -16,7 +16,8 @@
           <a class="nav-link text-center" href="#"><i class="fa fa-instagram fa-3x"></i></a>
         </li>
         <li class="text-center">
-          <button type="button" class="btn btn-outline-light" routerLink="/iniciar-sesion" style="margin:13px;">Ingresar</button>
+          <button type="button" class="btn btn-outline-light" style="margin:13px;" (click)="login()" *ngIf="!isLogged">Ingresar</button>
+          <button type="button" class="btn btn-outline-light" style="margin:13px;" (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesion</button>
         </li>
       </ul>
     </div>
