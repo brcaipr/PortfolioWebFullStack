@@ -7,9 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
-import { EducacionComponent } from './components/educacion/educacion.component';
-import { AddEducacionComponent } from './components/educacion/add-educacion.component';
-import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
+
 import { SkillsComponent } from './components/skills/skills.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
@@ -25,6 +23,7 @@ import { AddExperienciaComponent } from './components/experiencia/add-experienci
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
+import { interceptorProvider } from './service/interceptor-service';
 
 
 
@@ -36,9 +35,7 @@ import { HomeComponent } from './components/home/home.component';
     BannerComponent,
     AcercaDeComponent,
     ExperienciaComponent,
-    EducacionComponent,
-    AddEducacionComponent,
-    EditEducacionComponent,
+    
     SkillsComponent,
     ProyectoComponent,
     FooterComponent,
@@ -61,7 +58,8 @@ import { HomeComponent } from './components/home/home.component';
     ToastrModule.forRoot(),
   
   ],
-  providers: [EducacionService],
+  providers: [EducacionService,
+  interceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
