@@ -6,4 +6,7 @@ footer{
     box-shadow: 2px -2px 5px black;
     margin-top: 20px;
 }
-    
+*{
+    color: #fff;
+    background-color: #191c32;
+}    

@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 *{
     color: #fff;
+    background-color: #191c32;
 }
 
+
 h2,h4{
-    display: inline;
+    display: flex;
     font-family: 'Montserrat', sans-serif;
+    justify-content: center;
     
 }
 img{
@@ -18,11 +21,7 @@ h1{
     display: flex;
     justify-content: space-between;
 }
+ul{
+    list-style: none;
+}
 
-.fa-pencil{
-    margin-right: 20px;
-}
-.fa-plus{
-    font-size: 20px;
-    margin-right: 20px;
-}

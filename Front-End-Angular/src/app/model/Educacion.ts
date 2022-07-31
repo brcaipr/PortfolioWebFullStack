@@ -1,17 +1,17 @@
-export class Educacion{
-    id?: number;
-    nombre: string;
-    anio_inicio: string;
-    anio_fin: string;
-    detalle: string;
-    img: string;
+export class Educacion {
+    id? : number;
+    nombreE : string;
+    sedeE:string
+    anio_inicioE:string;
+    anio_finE:string;
+    descripcionE : string;
 
-    constructor(nombre:string,anio_inicio:string,anio_fin:string,detalle:string,img:string){
-        this.nombre=nombre;
-        this.anio_inicio=anio_inicio;
-        this.anio_fin=anio_fin;
-        this.detalle=detalle;
-        this.img=img;
+    constructor(nombreE: string, sedeE:string,anio_inicioE:string,anio_finE:string, descripcionE: string){
+        this.nombreE = nombreE;
+        this.sedeE= sedeE;
+        this.anio_inicioE=anio_inicioE;
+        this.anio_finE=anio_finE;
+        this.descripcionE = descripcionE;
     }
 }
 
