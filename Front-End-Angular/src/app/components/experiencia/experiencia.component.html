@@ -9,11 +9,12 @@
     <ul *ngFor="let Experiencia of expe">
         <li>
             <h2 class="text-center">{{Experiencia.nombreE}}</h2>
-            <h4>({{Experiencia.anio_inicioE}}-{{Experiencia.anio_finE}})
-            </h4>
+            <h3>{{Experiencia.sedeE}}</h3>
+            
+            
         </li>
         <li>
-            <h3>{{Experiencia.sedeE}}</h3>
+            <h4>({{Experiencia.anio_inicioE}}-{{Experiencia.anio_finE}})</h4>
         </li>
         <div class="container-fluid">
             <p class="text-break text-center">{{Experiencia.descripcionE}}</p>
