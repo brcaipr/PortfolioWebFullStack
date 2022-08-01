@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <div class="row">
+        <h1><b>Educación</b> <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+                <i class="fa fa-plus"></i>
+            </button></h1>
+
+    </div>
+
+    <ul *ngFor="let Educacion of edu">
+        <li>
+            <h2 class="text-center"><b>{{Educacion.nombreE}}</b></h2>
+            <h3>{{Educacion.sedeE}}</h3>
+            
+            
+        </li>
+        <li>
+            <h4>({{Educacion.anio_inicioE}}-{{Educacion.anio_finE}})</h4>
+        </li>
+        <div class="container-fluid">
+            <p class="text-break text-center">{{Educacion.descripcionE}}</p>
+        </div>
+
+        <div class="text-center">
+            <button *ngIf="isLogged" class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
+                <i class="bi bi-pencil-fill"></i></button>
+            <button *ngIf="isLogged" class="btn btn-danger" (click)="delete(Educacion.id)">
+                <i class="bi bi-trash-fill"></i></button>
+        </div>
+    </ul>
+</div>

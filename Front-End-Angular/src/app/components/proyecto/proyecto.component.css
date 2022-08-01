@@ -7,3 +7,16 @@ img{
     border-radius: 20px;
     
 }
+h2,h3,h4{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    
+}
+h1{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}

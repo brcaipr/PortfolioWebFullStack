@@ -4,8 +4,8 @@ package com.portfolio.torresbr.Dto;
 import javax.validation.constraints.NotBlank;
 
 
-public class dtoExperiencia {
-    @NotBlank
+public class dtoEducacion {
+      @NotBlank
    private String nombreE;
     @NotBlank
     private String sedeE;
@@ -15,14 +15,11 @@ public class dtoExperiencia {
     private String anio_finE;
     @NotBlank
     private String descripcionE;
-    
-    
-    //Constructores
 
-    public dtoExperiencia() {
+    public dtoEducacion() {
     }
 
-    public dtoExperiencia(String nombreE, String sedeE, String anio_inicioE, String anio_finE, String descripcionE) {
+    public dtoEducacion(String nombreE, String sedeE, String anio_inicioE, String anio_finE, String descripcionE) {
         this.nombreE = nombreE;
         this.sedeE = sedeE;
         this.anio_inicioE = anio_inicioE;
@@ -71,7 +68,5 @@ public class dtoExperiencia {
     }
     
     
-    
-
     
 }

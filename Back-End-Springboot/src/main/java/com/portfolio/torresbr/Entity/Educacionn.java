@@ -1,33 +1,40 @@
 
-package com.portfolio.torresbr.Dto;
+package com.portfolio.torresbr.Entity;
 
-import javax.validation.constraints.NotBlank;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-
-public class dtoExperiencia {
-    @NotBlank
-   private String nombreE;
-    @NotBlank
+@Entity
+public class Educacionn {
+     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+     private int id;
+   
+    private String nombreE;
     private String sedeE;
-    @NotBlank
     private String anio_inicioE;
-    @NotBlank
     private String anio_finE;
-    @NotBlank
     private String descripcionE;
-    
-    
-    //Constructores
 
-    public dtoExperiencia() {
+    public Educacionn() {
     }
 
-    public dtoExperiencia(String nombreE, String sedeE, String anio_inicioE, String anio_finE, String descripcionE) {
+    public Educacionn(String nombreE, String sedeE, String anio_inicioE, String anio_finE, String descripcionE) {
         this.nombreE = nombreE;
         this.sedeE = sedeE;
         this.anio_inicioE = anio_inicioE;
         this.anio_finE = anio_finE;
         this.descripcionE = descripcionE;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNombreE() {
@@ -70,8 +77,5 @@ public class dtoExperiencia {
         this.descripcionE = descripcionE;
     }
     
-    
-    
-
     
 }

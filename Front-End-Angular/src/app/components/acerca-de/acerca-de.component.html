@@ -1,16 +1,16 @@
-<div class="container-fluid">
+<div *ngFor="let AcercaDe of acerca" class="container-fluid">
     <div class="row">
         <div class="text-center col-xs-12 col-sm-12 col-md-3 col-lg-3">
-            <img src="../../../assets/fotoperfil.png" alt="fotoperfil1"><a href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
-            <h1 id="nombre">Braian Torres</h1>
-            <h2>Programador Full Stack Jr</h2>
+            <img src={{AcercaDe.fotoUrl}} alt="fotoperfil" border="0"><a href=""></a>
+            <h1 id="nombre">{{AcercaDe.nombre}}</h1>
+            <h2>{{AcercaDe.titulo}}</h2>
+            
             
         </div>
         <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-            <h1 id="acercade">Acerca de..  <a href=""><i class="fa fa-pencil" aria-hidden="true"></i></a></h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quod est aut nulla quibusdam nobis,
-                quisquam delectus nemo? Nemo ratione voluptas adipisci quasi labore laboriosam recusandae dignissimos
-                vitae voluptatem illo! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, eius quis! Culpa voluptatum corporis facere dolores veritatis eos obcaecati nostrum tempore! Accusamus rerum quae similique, a exercitationem enim iure doloribus?</p>
+            <h1 id="acercade">Acerca de..  <button *ngIf="isLogged" class="btn btn-light" routerLink="/editdatos/{{AcercaDe.id}}">
+                <i class="bi bi-pencil-fill"></i></button></h1>
+            <p>{{AcercaDe.acercaDe}}</p>
         </div>
     </div>
 </div>
