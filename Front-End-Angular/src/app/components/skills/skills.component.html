@@ -1,13 +1,18 @@
 <div class="container-fluid">
   <br />
   <div class="row">
-    <h1><b>Hard & Soft Skills</b></h1>
-    <div class="text-center col-md-4">
-      <h2>HTML</h2>
+    <h1>Hard & Soft Skills <button type="button" class="btn btn-dark" routerLink="/addskill" *ngIf="isLogged">
+      <i class="fa fa-plus"></i>
+  </button></h1>
+
+    <div class="text-center col-md-4" *ngFor="let skill of skill">
+      <h2>{{skill.nombre}}</h2>
       <circle-progress
-        [percent]="85"
+        [percent]="(skill.porcentaje)"
         [radius]="100"
-        [imageSrc]="'https://i.im.ge/2022/08/01/FPYqcz.htmllogo.png'"
+        [imageSrc]="''"
+        [title]="(skill.nombre)"
+        [titleColor]="'#fff'"
         [showImage]="true"
         [imageHeight]="90"
         [imageWidth]="90"
@@ -19,6 +24,13 @@
         [animationDuration]="300"
       >
       </circle-progress>
+
+      <div class="text-center">
+        <button *ngIf="isLogged" class="btn btn-light" routerLink="/editskill/{{skill.id}}">
+            <i class="bi bi-pencil-fill"></i></button>
+        <button *ngIf="isLogged" class="btn btn-danger" (click)="delete(skill.id)">
+            <i class="bi bi-trash-fill"></i></button>
+    </div>
     </div>
     <div class="text-center col-md-4">
       <h2>CSS</h2>

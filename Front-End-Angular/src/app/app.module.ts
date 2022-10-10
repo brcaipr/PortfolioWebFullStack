@@ -28,6 +28,8 @@ import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.com
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { AddEducacionComponent } from './components/educacion/add-educacion.component';
 import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
+import { EditSkillComponent } from './components/skills/edit-skill.component';
+import { AddSkillComponent } from './components/skills/add-skill.component';
 
 
 
@@ -53,6 +55,8 @@ import { EditEducacionComponent } from './components/educacion/edit-educacion.co
     EducacionComponent,
     AddEducacionComponent,
     EditEducacionComponent,
+    EditSkillComponent,
+    AddSkillComponent,
     
    
   
