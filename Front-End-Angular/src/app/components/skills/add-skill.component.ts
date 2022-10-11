@@ -11,13 +11,14 @@ import { SkillService } from 'src/app/service/skill.service';
 export class AddSkillComponent implements OnInit {
   nombre:string;
   porcentaje:number;
+  img:string;
   constructor(private skillS:SkillService, private router:Router) { }
 
   ngOnInit(): void {
   }
 
   onCreate(): void{
-    const skill = new Skill(this.nombre, this.porcentaje);
+    const skill = new Skill(this.nombre, this.porcentaje, this.img);
     this.skillS.save(skill).subscribe(
     data=> {
       alert("Skill creada correctamente");

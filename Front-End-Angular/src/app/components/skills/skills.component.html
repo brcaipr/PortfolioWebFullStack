@@ -10,8 +10,9 @@
       <circle-progress
         [percent]="(skill.porcentaje)"
         [radius]="100"
-        [imageSrc]="''"
+        [imageSrc]="(skill.img)"
         [title]="(skill.nombre)"
+        [showTitle]="false"
         [titleColor]="'#fff'"
         [showImage]="true"
         [imageHeight]="90"
@@ -32,77 +33,4 @@
             <i class="bi bi-trash-fill"></i></button>
     </div>
     </div>
-    <div class="text-center col-md-4">
-      <h2>CSS</h2>
-      <circle-progress
-        [percent]="50"
-        [radius]="100"
-        [imageSrc]="'https://i.im.ge/2022/08/01/FPYd0S.csslogo.png'"
-        [showImage]="true"
-        [imageHeight]="90"
-        [imageWidth]="90"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="3"
-        [outerStrokeColor]="'aqua'"
-        [innerStrokeColor]="'white'"
-        [animation]="true"
-        [animationDuration]="300"
-      >
-      </circle-progress>
-    </div>
-    <div class="text-center col-md-4">
-      <h2>JavaScript</h2>
-      <circle-progress
-        [percent]="85"
-        [radius]="100"
-        [imageSrc]="'https://i.im.ge/2022/08/01/FPY7DF.jslogo.png'"
-        [showImage]="true"
-        [imageHeight]="90"
-        [imageWidth]="90"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="3"
-        [outerStrokeColor]="'aqua'"
-        [innerStrokeColor]="'white'"
-        [animation]="true"
-        [animationDuration]="300"
-      >
-      </circle-progress>
-    </div>
-    <div class="text-center col-md-4">
-      <h2>Angular</h2>
-      <circle-progress
-        [percent]="85"
-        [radius]="100"
-        [imageSrc]="'https://i.im.ge/2022/08/01/FPYIv9.angularlogo.png'"
-        [showImage]="true"
-        [imageHeight]="90"
-        [imageWidth]="90"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="3"
-        [outerStrokeColor]="'aqua'"
-        [innerStrokeColor]="'white'"
-        [animation]="true"
-        [animationDuration]="300"
-      >
-      </circle-progress>
-    </div>
-    <div class="text-center col-md-4">
-      <h2>Node JS</h2>
-      <circle-progress
-        [percent]="55"
-        [radius]="100"
-        [imageSrc]="'https://i.im.ge/2022/08/01/FPYySP.nodejslogo.png'"
-        [showImage]="true"
-        [imageHeight]="90"
-        [imageWidth]="90"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="3"
-        [outerStrokeColor]="'aqua'"
-        [innerStrokeColor]="'white'"
-        [animation]="true"
-        [animationDuration]="300"
-      >
-      </circle-progress>
-    </div>
-  </div>
-</div>
+    
