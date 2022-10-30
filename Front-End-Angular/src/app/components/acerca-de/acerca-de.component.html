@@ -3,12 +3,12 @@
         <div class="text-center col-xs-12 col-sm-12 col-md-3 col-lg-3">
             <img src={{AcercaDe.fotoUrl}} alt="fotoperfil" border="0"><a href=""></a>
             <h1 id="nombre">{{AcercaDe.nombre}}</h1>
-            <h2>{{AcercaDe.titulo}}</h2>
+            <h2><b>{{AcercaDe.titulo}}</b></h2>
             
             
         </div>
         <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-            <h1 id="acercade">Acerca de..  <button *ngIf="isLogged" class="btn btn-light" routerLink="/editdatos/{{AcercaDe.id}}">
+            <h1 id="acercade">Acerca de mi..  <button *ngIf="isLogged" class="btn btn-light" routerLink="/editdatos/{{AcercaDe.id}}">
                 <i class="bi bi-pencil-fill"></i></button></h1>
             <p>{{AcercaDe.acercaDe}}</p>
         </div>

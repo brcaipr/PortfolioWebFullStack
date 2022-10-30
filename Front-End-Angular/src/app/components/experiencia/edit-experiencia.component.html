@@ -2,6 +2,7 @@
     <div class="row">
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <br>
                 <div class="form-group">
                     <label for="nombreE">Puesto.</label>
                     <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="expLab.nombreE" required>
@@ -22,6 +23,7 @@
                     <label for="descripcionE">Descripcion de la tarea</label>
                     <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="expLab.descripcionE" required>
                 </div>
+                <br>
                 <button class="btn btn-primary">
                     Actualizar
                 </button>

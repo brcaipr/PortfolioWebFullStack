@@ -8,11 +8,12 @@
 }
 h2 {
   color: #fff;
+  font-family: 'Montserrat', sans-serif;
   
 }
 p {
   color: #fff;
-  font-family: 'Didact Gothic', sans-serif;
+  
 }
 img {
   position: relative;
@@ -25,10 +26,11 @@ img {
 
 #acercade {
     color: #fff;
+   
   margin: 25px auto;
   display: flex;
   justify-content: space-between;
-  font-family: 'Didact Gothic', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .fa-pencil{
   font-size: 20px;

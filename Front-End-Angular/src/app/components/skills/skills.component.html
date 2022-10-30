@@ -6,7 +6,7 @@
   </button></h1>
 
     <div class="text-center col-md-4" *ngFor="let skill of skill">
-      <h2>{{skill.nombre}}</h2>
+      <h2><b>{{skill.nombre}}</b></h2>
       <circle-progress
         [percent]="(skill.porcentaje)"
         [radius]="100"

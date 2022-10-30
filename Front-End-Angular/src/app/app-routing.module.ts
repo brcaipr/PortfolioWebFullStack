@@ -12,6 +12,9 @@ import { EditEducacionComponent } from './components/educacion/edit-educacion.co
 import { AddEducacionComponent } from './components/educacion/add-educacion.component';
 import { AddSkillComponent } from './components/skills/add-skill.component';
 import { EditSkillComponent } from './components/skills/edit-skill.component';
+import { AddProyectoComponent } from './components/proyecto/add-proyecto.component';
+import { EditProyectoComponent } from './components/proyecto/edit-proyecto.component';
+
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -23,7 +26,9 @@ const routes: Routes = [
   {path:'editedu/:id',component:EditEducacionComponent},
   {path:'nuevaedu',component:AddEducacionComponent},
   {path:'addskill',component:AddSkillComponent},
-  {path:'editskill/:id',component:EditSkillComponent}
+  {path:'editskill/:id',component:EditSkillComponent},
+  {path:'addproyecto',component:AddProyectoComponent},
+  {path:'editproyecto/:id',component:EditProyectoComponent}
 
   
 

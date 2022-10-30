@@ -30,6 +30,8 @@ import { AddEducacionComponent } from './components/educacion/add-educacion.comp
 import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
 import { EditSkillComponent } from './components/skills/edit-skill.component';
 import { AddSkillComponent } from './components/skills/add-skill.component';
+import { EditProyectoComponent } from './components/proyecto/edit-proyecto.component';
+import { AddProyectoComponent } from './components/proyecto/add-proyecto.component';
 
 
 
@@ -57,6 +59,8 @@ import { AddSkillComponent } from './components/skills/add-skill.component';
     EditEducacionComponent,
     EditSkillComponent,
     AddSkillComponent,
+    EditProyectoComponent,
+    AddProyectoComponent,
     
    
   
