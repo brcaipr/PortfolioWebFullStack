@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.portfolio.torresbr.Security.Controller;
 
 import com.portfolio.torresbr.Security.Dto.JwtDto;
@@ -34,7 +31,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin
+@CrossOrigin(origins = "https://frontendfinalbr.web.app")
 public class AuthController {
 
     @Autowired
